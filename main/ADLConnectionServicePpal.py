@@ -40,7 +40,7 @@ adlsAccountName = os.environ.get('ADL_ACCOUNT_NAME')
 adlsFileSystemClient = core.AzureDLFileSystem(adlCreds, store_name=adlsAccountName)
 
 # Listar ficheros
-lista = adlsFileSystemClient.listdir(path="/", detail=False, invalidate_cache=True)
+lista = adlsFileSystemClient.listdir(path="/raw/db/AP_CORP_ETAC/GLB/CTL_PDV_EESS_FECHA_OT/year=2020/month=03/day=31/", detail=False, invalidate_cache=True)
 print(lista)
 
 
